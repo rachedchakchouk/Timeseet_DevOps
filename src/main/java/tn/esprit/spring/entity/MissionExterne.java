@@ -48,7 +48,7 @@ public class MissionExterne extends Mission implements Serializable{
 		// TODO Auto-generated constructor stub
 	}
 
-	public MissionExterne(Long idMission, String nameMission, String descriptionMission,
+	public MissionExterne(int idMission, String nameMission, String descriptionMission,
 			Set<Timesheet> timesheet, tn.esprit.spring.entity.Departement departement) {
 		super(idMission, nameMission, descriptionMission, timesheet, departement);
 	}
@@ -59,7 +59,7 @@ public class MissionExterne extends Mission implements Serializable{
 		this.tauxJournalierMoyen = tauxJournalierMoyen;
 	}
 
-	public MissionExterne(Long idMission,String nameMission,String descriptionMission,String emailFacturation, int tauxJournalierMoyen) {
+	public MissionExterne(int idMission,String nameMission,String descriptionMission,String emailFacturation, int tauxJournalierMoyen) {
 		super();
 		this.idMission = idMission;
 		this.nameMission = nameMission;
