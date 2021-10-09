@@ -22,7 +22,7 @@ public class Mission implements Serializable{
 	@Id
 	@GeneratedValue (strategy = GenerationType.IDENTITY)
 	@Column(name="ID")
-	protected Long idMission;
+	protected int idMission;
 	
 	@Column(name="NAME")
 	protected String nameMission;
@@ -44,11 +44,11 @@ public class Mission implements Serializable{
 		serialVersionUID = serialversionuid;
 	}
 
-	public Long getIdMission() {
+	public int getIdMission() {
 		return idMission;
 	}
 
-	public void setIdMission(Long idMission) {
+	public void setIdMission(int idMission) {
 		this.idMission = idMission;
 	}
 
@@ -88,7 +88,7 @@ public class Mission implements Serializable{
 		Timesheet = timesheet;
 	}
 
-	public Mission(Long idMission, String nameMission, String descriptionMission,
+	public Mission(int idMission, String nameMission, String descriptionMission,
 			Set<Timesheet> timesheet, Departement departement) {
 		super();
 		this.idMission = idMission;
