@@ -40,7 +40,20 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-		
+		<!-- EmployeServiceImplTest est écrit en JUnit 4 (@RunWith) : JUnit 4 n'est plus fourni par
+		     spring-boot-starter-test depuis Spring Boot 2.4, le moteur vintage le fait tourner sur JUnit 5.
+		     Versions gérées par Spring Boot. -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.junit.vintage</groupId>
+			<artifactId>junit-vintage-engine</artifactId>
+			<scope>test</scope>
+		</dependency>
+
 		
 		<!-- dependicies jsf -->
 		<dependency>
