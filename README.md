@@ -9,7 +9,7 @@ used as the quality gate of the CI pipeline.
 
 ## Tech stack
 
-- Java 8, Spring Boot 2.5, Spring Web, Spring Data JPA / Hibernate
+- Java 8, Spring Boot 2.7, Spring Web, Spring Data JPA / Hibernate
 - MySQL
 - JSF / PrimeFaces + OCPsoft Rewrite (server-side views)
 - Maven, JUnit 4, AssertJ
