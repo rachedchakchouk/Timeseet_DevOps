@@ -25,3 +25,19 @@ updates:
     ignore:
       - dependency-name: "org.springframework.boot:*"
         update-types: ["version-update:semver-major"]
+
+  # ---- Actions GitHub de l'intégration continue (.github/workflows)
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "06:00"
+      timezone: "Africa/Tunis"
+    open-pull-requests-limit: 5
+    commit-message:
+      prefix: "deps"
+    labels: ["dépendances"]
+    groups:
+      actions:
+        patterns: ["*"]
